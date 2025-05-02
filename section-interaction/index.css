@@ -1,0 +1,305 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  background-color: #111;
+}
+
+#main-img-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 139px;
+}
+
+#intro-main {
+  display: flex;
+  margin: 54px auto 300px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  width: 300px;
+  font-size: 40px;
+  font-weight: 500;
+  gap: 20px;
+}
+
+#join-us-text {
+  margin-top: 73px;
+  opacity: 0.6;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+#intro-main p {
+  text-align: center;
+}
+
+@keyframes upAndDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+#down-arrow-icon {
+  width: 33px;
+  animation: upAndDown 1s infinite;
+}
+
+#list-item-wrapper {
+  width: 383px;
+  margin: 0 auto 500px;
+}
+
+.list-item {
+  display: inline;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.list-item::before {
+  display: inline-block;
+  background-image: url("./icons/dark_house.png");
+  background-size: 51px 53px;
+  content: "";
+  width: 51px;
+  height: 53px;
+}
+
+.list-item#on {
+  color: white;
+}
+.list-item#on::before {
+  background-image: url("./icons/light_house.png");
+}
+
+#panel1-img {
+  position: relative;
+  height: 320px;
+  margin-bottom: 300px;
+}
+
+#flying-santa-img {
+  height: 380px;
+  position: absolute;
+  right: -80px;
+  transform: translate(80px, -13px) rotate(23deg);
+}
+
+#video {
+  height: 350px;
+  display: block;
+  margin: 0 auto;
+}
+
+#video-section {
+  margin-bottom: 1000px;
+}
+
+#fixed-description {
+  width: 622px;
+  margin: 30px auto 0;
+  color: white;
+  text-align: right;
+  line-height: 50px;
+  font-size: 35px;
+  font-weight: 600;
+  transform: translateY(100px);
+  opacity: 1;
+}
+
+#bank-beyond-wrapper {
+  height: 380px;
+}
+#bank-beyond {
+  display: flex;
+  justify-content: center;
+}
+
+#white-wrapper {
+  padding-top: 80px;
+  position: relative;
+  height: 1000px;
+  background-color: #f7f7f7;
+  z-index: 100 b;
+}
+
+#slider-container {
+  margin: 0 auto;
+  position: relative;
+  width: 300px;
+}
+
+#slider-content-wrapper {
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+}
+
+#slider-content-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+#slider-content {
+  display: flex;
+}
+
+.slider-image {
+  width: 300px;
+  height: 466px;
+  scroll-snap-align: center;
+}
+
+.slider-button {
+  position: absolute;
+  bottom: -110px;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+#left-button {
+  left: 10px;
+}
+
+#right-button {
+  right: 10px;
+}
+
+#slider-index {
+  position: absolute;
+  bottom: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+}
